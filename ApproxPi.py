@@ -1,7 +1,7 @@
 #ApproxPi.py
-#Name:
-#Date:
-#Assignment:
+#Name:Ryder Anderson
+#Date:02/02/2025
+#Assignment:ApproxPI
 import math
 import time
 
@@ -12,11 +12,26 @@ def main():
   realPi = math.pi
 
   #ask user for decimal percision (up to 10)
+  percision = input("enter percision")
+  int(percision [1:10])
 
   start = time.time()
   #calculate pi using the approximation technique
   #Loop until the level of percision is reached
+  approxpi = 4/1
+  sign = -1 
+  denom = 3 
 
+  while round(approxpi , percision) != round(realPi , percision):
+    print(approxpi)
+    approxpi = approxpi + (sign * 4 / denom)
+
+    sign = sign * -1
+    denom = denom + 2
+
+
+
+  
   end = time.time()
 
   elapsedTime = end - start

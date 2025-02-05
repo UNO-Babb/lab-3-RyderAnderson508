@@ -1,5 +1,5 @@
 #RPS.py
-#Name:
+#Name:Ryder Anderson
 #Date:
 #Assignment:
 import random

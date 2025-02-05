@@ -67,6 +67,8 @@ def main():
       wins = wins + 1
 
     playagain = input("Playagain (Y/N): ")
+  else:
+    print("only (Y/N): ")
 
   #Ask the user if they would like to play again.
   playagain = input("play again (Y/N)")

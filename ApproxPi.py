@@ -12,9 +12,9 @@ def main():
   realPi = math.pi
 
   #ask user for decimal percision (up to 10)
-  percision = input("enter percision")
-  int(percision [1:10])
-
+  precision = int(input("enter percision(1 to 10): "))
+  precision = int(precision)
+  
   start = time.time()
   #calculate pi using the approximation technique
   #Loop until the level of percision is reached
@@ -22,7 +22,7 @@ def main():
   sign = -1 
   denom = 3 
 
-  while round(approxpi , percision) != round(realPi , percision):
+  while round(approxpi , precision) != round(realPi , precision):
     print(approxpi)
     approxpi = approxpi + (sign * 4 / denom)
 
